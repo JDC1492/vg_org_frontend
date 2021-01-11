@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home'
 import GameForm from './components/GameForm'
 import Games from './components/Games'
@@ -13,10 +13,9 @@ class App extends Component{
     <NavBar />
       <div className="App">
         <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/games/new" component={GameForm}/>
-          <Route exact path="games" component={Games}/>
-      
+          <Route exact path="/" component={ Home }/>
+          <Route exact path="/games/new" component={ GameForm }/>
+          <Route exact path="games" component={ Games }/>
         </Switch>  
       </div>
     </Router>

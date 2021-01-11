@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
 
 class GameForm extends Component {
-
-    state={
-        title:"",
-        release_year:"",
-        console:"",
-        developer:"",
-        genre:"",
-        description:"",
-        cover_art:""
+    constructor(){
+        super()
+        this.state={
+            title:"",
+            release_year:"",
+            console:"",
+            developer:"",
+            genre:"",
+            description:"",
+            cover_art:""
+        }
     }
+    
 
     handleChange = e => {
         this.setState({
             [e.target.name]: e.target.value
         })
     }
+
+    handleSubmit = e => {
+       e.preventDefault()
+
+    }
+
+
     render() {
         return (
-            <div className="gameForm" onSubmit={this.handleSubmit}>
-                <form>
+            <div className="gameForm" >
+                <form onSubmit={this.handleSubmit}>
                     <label>Title</label>
                         <input type='text' name='title' value={this.state.title} onChange={(e) => this.handleChange(e)}/>
                     <label>Release Year</label>
