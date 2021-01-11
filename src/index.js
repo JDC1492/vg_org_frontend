@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from "redux";
+import { createStore, compose } from "redux";
 import { Provider } from 'react-redux';
-import GameReducer from './reducers/GameReducer';
+import gamesReducer from './reducers/gamesReducer';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const store = createStore(GameReducer) 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ||compose
 
+
+
+const store = createStore(gamesReducer, composeEnhancers()) 
+ 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={store}> //wrapping provider around APP to give full access to the store.
     <App />
   </Provider>,
   document.getElementById('root')
