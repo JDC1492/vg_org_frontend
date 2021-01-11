@@ -4,15 +4,16 @@ const Game = ({game}) =>  {
     // debugger
         return (
             <div> 
-            <>               
-                {game.title}
-                {game.release_year}
-                {game.console}
-                {game.developer}
-                {game.genre}
-                {game.description}
-                {game.cover_art}
-            </>
+        
+                {game.cover_art} <br />            
+                {game.title}<br />
+                {game.release_year}<br />
+                {game.console}<br />
+                {game.developer}<br />
+                {game.genre}<br />
+                {game.description}<br />
+                
+        
             </div>
         );
 }
