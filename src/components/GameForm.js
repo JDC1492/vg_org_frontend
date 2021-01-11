@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { addGame } from '../actions/actIndex';
+import { connect } from 'react-redux';
 
 class GameForm extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state={
             title:"",
             release_year:"",
@@ -20,31 +22,33 @@ class GameForm extends Component {
             [e.target.name]: e.target.value
         })
     }
-
     handleSubmit = e => {
        e.preventDefault()
-
+       this.props.addGame(this.state)
+       debugger
+       this.setState={
+            title:"",
+            release_year:"",
+            console:"",
+            developer:"",
+            genre:"",
+            description:"",
+            cover_art:""
+       }
+       debugger
     }
-
 
     render() {
         return (
             <div className="gameForm" >
                 <form onSubmit={this.handleSubmit}>
-                    <label>Title</label>
-                        <input type='text' name='title' value={this.state.title} onChange={(e) => this.handleChange(e)}/>
-                    <label>Release Year</label>
-                        <input type='text' name='release_year' value={this.state.release_year} onChange={(e) => this.handleChange(e)}/>
-                    <label>Console</label>
-                        <input type='text' name='console' value={this.state.console} onChange={(e) => this.handleChange(e)}/>
-                    <label>Developer</label>
-                        <input type='text' name='developer' value={this.state.developer} onChange={(e) => this.handleChange(e)}/>
-                    <label>Genre</label>
-                        <input type='text' name='genre' value={this.state.genre} onChange={(e) => this.handleChange(e)}/>
-                    <label>Description</label>
-                        <input type='text' name='description' value={this.state.description} onChange={(e) => this.handleChange(e)}/>
-                    <label>Cover Art URL</label>
-                        <input type='text' name='cover_art' value={this.state.cover_art} onChange={(e) => this.handleChange(e)}/>
+                        <input type='text' name='title' placeholder='Title' value={this.state.title} onChange={(e) => this.handleChange(e)}/>
+                        <input type='text' name='release_year' placeholder='Release Year' value={this.state.release_year} onChange={(e) => this.handleChange(e)}/>
+                        <input type='text' name='console' placeholder='Console' value={this.state.console} onChange={(e) => this.handleChange(e)}/>
+                        <input type='text' name='developer' placeholder='Developer' value={this.state.developer} onChange={(e) => this.handleChange(e)}/>
+                        <input type='text' name='genre' placeholder='Genre' value={this.state.genre} onChange={(e) => this.handleChange(e)}/>
+                        <input type='text' name='description' placeholder='Description' value={this.state.description} onChange={(e) => this.handleChange(e)}/>
+                        <input type='text' name='cover_art' placeholder='Cover Art URL' value={this.state.cover_art} onChange={(e) => this.handleChange(e)}/>
                     <input type='submit' />
                 </form>
                 
@@ -53,4 +57,4 @@ class GameForm extends Component {
     }
 }
 
-export default GameForm;
+export default connect(null, { addGame })(GameForm);

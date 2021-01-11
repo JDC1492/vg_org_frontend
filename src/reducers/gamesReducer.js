@@ -1,5 +1,5 @@
 export default function gamesReducer(
-    state=[], action){
+    state=[{title:"Legend of Dragoon", id:1}], action){
         switch (action.type){
         case 'ADD_GAME':
             return[...state, action.payload]  
