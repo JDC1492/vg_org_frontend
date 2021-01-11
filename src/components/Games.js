@@ -3,7 +3,7 @@ import Game from '../components/Game';
 
 class Games extends Component {
     render() {
-        const eachGame = this.props.games.map(game => <Game key={game.id} />)
+        const eachGame = this.props.games.map((game, i) => <Game key={i} game={game} />)
         return (
             <div>
                 {eachGame}

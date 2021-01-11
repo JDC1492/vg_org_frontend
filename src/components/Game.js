@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Game extends Component {
-    render() {
+const Game = ({game}) =>  {
+    // debugger
         return (
-            <div>
-                <img src={game.cover_art}/>
-                <h4>{game.title}</h4>
-                <h5>{game.release_year}</h5>
-                <h5>{game.console}</h5>
-                <h5>{game.developer}</h5>
-                <h5>{game.genre}</h5>
-                <p>{game.description}</p>
+            <div> 
+            <>               
+                {game.title}
+                {game.release_year}
+                {game.console}
+                {game.developer}
+                {game.genre}
+                {game.description}
+                {game.cover_art}
+            </>
             </div>
         );
-    }
 }
 
 export default Game;

@@ -1,5 +1,12 @@
 export default function gamesReducer(
-    state=[{title:"Legend of Dragoon", id:1}], action){
+    state=[{id:15, title:"Legend of Dragoon",
+        release_year:"2001",
+        console:"Playstation",
+        developer:"Japan Studio", 
+        genre:"JRPG", 
+        description:"Dragons and Knights",
+        cover_art:"N/A"
+        }], action){
         switch (action.type){
         case 'ADD_GAME':
             return[...state, action.payload]  
