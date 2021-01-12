@@ -24,8 +24,7 @@ class GameForm extends Component {
     }
     handleSubmit = e => {
        e.preventDefault()
-       this.props.addGame(this.state)
-       debugger
+       this.props.addGame(this.state)    
        this.setState({
             title:"",
             release_year:"",
@@ -35,7 +34,6 @@ class GameForm extends Component {
             description:"",
             cover_art:""
        })
-       debugger
     }
 
     render() {

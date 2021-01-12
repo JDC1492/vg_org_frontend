@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
+import { Accordion, Card, Button } from 'react-bootstrap';
 
 class Home extends Component {
     render() {
         return (
-            <div>
-                <h1> Welcome to VG_Organizer. The #1 gaming catalogue application! </h1> 
-                <h3> How to use? </h3>
-                <h4> If you have a new game that you want to place in the catalogue 
-                you simply  </h4> 
-                <ol> 
-                <li>Go to tne new page by clicking the link in the navbar. </li>
-                <li>fill out the form and press submit.</li>
-                <li> watch as your collection grows larger!</li>
-                </ol>
+        <div>
+        Welcome to VG_Organizer.
+            <Accordion defaultActiveKey="1">
+                <Card>
+                <Card.Header>
+                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                        How to use?
+                    </Accordion.Toggle>
+                </Card.Header>
+                <Accordion.Collapse eventKey="0">
+            <Card.Body>
+                If you have a new game that you want to place in the catalogue 
+                you simply go to the new page by clicking the link in the navbar. 
+                Fill out the form, press submit, and watch as your collection grows larger!
+            </Card.Body>
+                </Accordion.Collapse>
+                </Card>
+            </Accordion>
+                
                  
             </div>
         );
