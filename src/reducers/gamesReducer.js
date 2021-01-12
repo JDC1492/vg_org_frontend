@@ -5,7 +5,7 @@ export default function gamesReducer(
         developer:"Japan Studio", 
         genre:"JRPG", 
         description:"Dragons and Knights",
-        cover_art:"N/A"
+        cover_art:"https://upload.wikimedia.org/wikipedia/en/3/32/Legend_of_Dragoon.jpg"
         }], action){
         switch (action.type){
         case 'ADD_GAME':

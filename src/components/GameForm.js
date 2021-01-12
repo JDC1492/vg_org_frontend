@@ -42,14 +42,14 @@ class GameForm extends Component {
         return (
             <div className="gameForm" >
                 <form onSubmit={this.handleSubmit}>
-                        <input type='text' name='title' placeholder='Title' value={this.state.title} onChange={(e) => this.handleChange(e)}/>
-                        <input type='text' name='release_year' placeholder='Release Year' value={this.state.release_year} onChange={(e) => this.handleChange(e)}/>
-                        <input type='text' name='console' placeholder='Console' value={this.state.console} onChange={(e) => this.handleChange(e)}/>
-                        <input type='text' name='developer' placeholder='Developer' value={this.state.developer} onChange={(e) => this.handleChange(e)}/>
-                        <input type='text' name='genre' placeholder='Genre' value={this.state.genre} onChange={(e) => this.handleChange(e)}/>
-                        <input type='text' name='description' placeholder='Description' value={this.state.description} onChange={(e) => this.handleChange(e)}/>
-                        <input type='text' name='cover_art' placeholder='Cover Art URL' value={this.state.cover_art} onChange={(e) => this.handleChange(e)}/>
-                    <input type='submit' />
+                        <input type='text' name='title' placeholder='Title' value={this.state.title} onChange={(e) => this.handleChange(e)}/><br />
+                        <input type='text' name='release_year' placeholder='Release Year' value={this.state.release_year} onChange={(e) => this.handleChange(e)}/><br />
+                        <input type='text' name='console' placeholder='Console' value={this.state.console} onChange={(e) => this.handleChange(e)}/><br />
+                        <input type='text' name='developer' placeholder='Developer' value={this.state.developer} onChange={(e) => this.handleChange(e)}/><br />
+                        <input type='text' name='genre' placeholder='Genre' value={this.state.genre} onChange={(e) => this.handleChange(e)}/><br />
+                        <input type='text' name='description' placeholder='Description' value={this.state.description} onChange={(e) => this.handleChange(e)}/><br />
+                        <input type='text' name='cover_art' placeholder='Cover Art URL' value={this.state.cover_art} onChange={(e) => this.handleChange(e)}/><br />
+                    <input type='submit' /><br /><br />
                 </form>
                 
             </div>
