@@ -1,8 +1,9 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { CardDeck, ListGroup, Row} from 'react-bootstrap';
+import { connect } from 'react-redux';
+import { deleteGame } from '../actions/ActIndex';
 import View from '../components/View';
-import Delete from '../components/Delete';
 
 
 const Game = ({game}) =>  {
@@ -27,7 +28,7 @@ const Game = ({game}) =>  {
                                             <View />
                                         </ListGroup.Item>
                                         <ListGroup.Item>
-                                            <Delete />
+                                        <button onClick={() => deleteGame(game.id)}>Delete Game</button>
                                         </ListGroup.Item>
                                     </ListGroup>
                             </ListGroup>
@@ -38,4 +39,4 @@ const Game = ({game}) =>  {
         );
 }
 
-export default Game;
+export default connect(null, { deleteGame })(Game);

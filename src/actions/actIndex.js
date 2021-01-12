@@ -25,7 +25,17 @@ export const addGame = game => {
 }
 
 export const deleteGame = gameId => {
-    return {
-        type:'REMOVE_GAME', payload: gameId
-    }
+    return (dispatch) => {
+        return fetch(`http://localhost:3000/games/${gameId}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify()
+        })
+            .then(resp => resp.json())
+            .then(game => {
+                dispatch({type:'REMOVE_GAME', payload: game.id})
+            })
+    } 
 }
