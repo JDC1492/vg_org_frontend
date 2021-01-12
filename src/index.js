@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore, compose } from 'redux';
 import { Provider } from 'react-redux';
 import gamesReducer from './reducers/gamesReducer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

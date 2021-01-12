@@ -26,7 +26,7 @@ class GameForm extends Component {
        e.preventDefault()
        this.props.addGame(this.state)
        debugger
-       this.setState={
+       this.setState({
             title:"",
             release_year:"",
             console:"",
@@ -34,7 +34,7 @@ class GameForm extends Component {
             genre:"",
             description:"",
             cover_art:""
-       }
+       })
        debugger
     }
 
