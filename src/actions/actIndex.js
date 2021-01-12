@@ -35,7 +35,7 @@ export const deleteGame = gameId => {
         })
             .then(resp => resp.json())
             .then(game => {
-                dispatch({type:'REMOVE_GAME', payload: game.id})
+                dispatch({type: 'REMOVE_GAME', payload: game.id})
             })
     } 
 }

@@ -6,7 +6,7 @@ import { deleteGame } from '../actions/ActIndex';
 import View from '../components/View';
 
 
-const Game = ({game}) =>  {
+const Game = ({game, deleteGame}) =>  {
     // debugger
         return (
             <div>
