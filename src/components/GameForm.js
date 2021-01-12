@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { addGame } from '../actions/actIndex';
+import { addGame } from '../actions/ActIndex';
 import { connect } from 'react-redux';
+import { Container } from 'react-bootstrap';
 
 class GameForm extends Component {
     constructor(props){
@@ -39,6 +40,7 @@ class GameForm extends Component {
     render() {
         return (
             <div className="gameForm" >
+            <Container>
                 <form onSubmit={this.handleSubmit}>
                         <input type='text' name='title' placeholder='Title' value={this.state.title} onChange={(e) => this.handleChange(e)}/><br />
                         <input type='text' name='release_year' placeholder='Release Year' value={this.state.release_year} onChange={(e) => this.handleChange(e)}/><br />
@@ -49,7 +51,7 @@ class GameForm extends Component {
                         <input type='text' name='cover_art' placeholder='Cover Art URL' value={this.state.cover_art} onChange={(e) => this.handleChange(e)}/><br />
                     <input type='submit' /><br /><br />
                 </form>
-                
+            </Container>    
             </div>
         );
     }

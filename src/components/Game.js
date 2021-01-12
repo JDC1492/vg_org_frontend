@@ -8,9 +8,9 @@ const Game = ({game}) =>  {
             <div>
             <Row>
                 <CardDeck style={{ width: '18rem' }}>  
-                <Card className="text-center" style={{ width: '17rem' }} >      
+                <Card className="text-left" style={{ width: '17rem' }} >      
                     <Card.Img fluid variant="top" src={game.cover_art} alt="" />
-                    <Card.Body>
+                    <Card.Body className="text-center">
                         <Card.Title>{game.title}</Card.Title> 
                         <Card.Text>{game.description}</Card.Text>
                     </Card.Body>    

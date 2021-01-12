@@ -9,8 +9,18 @@ export const fetchGames = () => {
 }
 
 export const addGame = game => {
-    return {
-        type:'ADD_GAME', payload: game
+    return (dispatch) => {
+        return fetch('http://localhost:3000/games', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({game:game})
+        })
+            .then(resp => resp.json())
+            .then(game => {
+                dispatch({type: 'ADD_GAME', payload: game})
+            })
     }
 }
 
