@@ -14,7 +14,7 @@ class Home extends Component {
                     </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
-            <Card.Body>
+            <Card.Body >
                 If you have a new game that you want to place in the catalogue 
                 you simply go to the new page by clicking the link in the navbar. 
                 Fill out the form, press submit, and watch as your collection grows larger!
