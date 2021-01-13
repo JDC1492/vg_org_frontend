@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const View = () => {
+const View = (game) => {
     return (
-        <div>
-            <button>View Game</button>
-        </div>
+        <>
+            <Link to={`/pets/${game.id}`}>View Game</Link>
+        </>
     );
 }
 
