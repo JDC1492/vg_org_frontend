@@ -8,6 +8,16 @@ export const fetchGames = () => {
     }
 }
 
+export const getGame = game => {
+    return (dispatch) => {
+        return fetch(`http://localhost:3000/games/${game}`)
+            .then(resp => resp.json())
+            .then(game => {
+                dispatch({type: "GRAB_GAME", payload: game.id})
+            })
+    }
+}
+
 export const addGame = game => {
     return (dispatch) => {
         return fetch('http://localhost:3000/games', {

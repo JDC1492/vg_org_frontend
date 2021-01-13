@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 import { CardDeck, ListGroup, Row} from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { deleteGame } from '../actions/ActIndex';
-import View from '../components/View';
+import { Link } from 'react-router-dom';
 
 
 const Game = ({game, deleteGame}) =>  {
@@ -25,7 +25,7 @@ const Game = ({game, deleteGame}) =>  {
                                 <ListGroup.Item>Game Genre: {game.genre}</ListGroup.Item>
                                     <ListGroup horizontal>
                                         <ListGroup.Item>
-                                            <View />
+                                        <Link to={`/games/${game.id}`}>View Game</Link>
                                         </ListGroup.Item>
                                         <ListGroup.Item>
                                         <button onClick={() => deleteGame(game.id)}>Delete Game</button>
