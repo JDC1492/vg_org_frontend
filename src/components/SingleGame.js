@@ -1,24 +1,18 @@
-import React, { Component } from 'react';
-import Game from '../components/Game';
+import React from 'react';
 import { connect } from 'react-redux';
-import { getGame } from '../actions/ActIndex';
+// import Game from '../components/Game';
+// import { getGame } from '../actions/ActIndex';
 
-class SingleGame extends Component {
+const SingleGame = (props) => {
+        // const urlID = parseInt(window.location.href.charAt(window.location.href.length-1))
+        //  const match = props.games.find(game => game.id === urlID)
 
-
-
-    // componentDidMount(){
-    //     this.props.getGame()
-    // }
-    render() {
-        // const singleGame = this.props.games.find(game => )
         return (
             <div>
-                {/* {singleGame} */} SingleGame shows here.
+            {/* {match.title} */}
             </div>
         );
-    }
 }
 
 
-export default connect(null, {getGame})(SingleGame);
+export default connect(null)(SingleGame);

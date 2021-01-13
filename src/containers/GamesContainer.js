@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { Container } from 'react-bootstrap';
 
 class GamesContainer extends Component {
+    
     render() {
         return (
             <div>
@@ -17,7 +18,7 @@ class GamesContainer extends Component {
     }
 }
 
-const mapStateToProps = (state) =>{
+const mapStateToProps = state =>{
     return{games: state}
 }
 
