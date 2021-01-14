@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Game = ({game, deleteGame}) =>  {
     // debugger
         return (
-            <div>
+            <>
                 <Row>
                     <CardDeck style={{ width: '18rem'}}>  
                         <Card className="card-look" style={{ width: '17rem'}}  >      
@@ -34,7 +34,7 @@ const Game = ({game, deleteGame}) =>  {
                         </Card>
                     </CardDeck>
                 </Row>
-            </div>
+            </>
         );
 }
 
