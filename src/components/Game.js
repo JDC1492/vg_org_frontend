@@ -24,7 +24,7 @@ const Game = ({game, deleteGame}) =>  {
                                 <ListGroup.Item>Game Genre: {game.genre}</ListGroup.Item>
                                     <ListGroup horizontal>
                                         <ListGroup.Item>
-                                        <Link game={game} to={`/games/${game.id}`} >View Game</Link>
+                                        <Link to={`/games/${game.id}`}>View Game</Link>
                                         </ListGroup.Item>
                                         <ListGroup.Item>
                                         <button onClick={() => deleteGame(game.id)}>Delete Game</button>

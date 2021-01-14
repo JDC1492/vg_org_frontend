@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import Game from '../components/Game';
 import { Col, Row} from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { fetchGames } from '../actions/ActIndex';
+// import { fetchGames } from '../actions/ActIndex';
 
 
 class Games extends Component {
 
 
-    componentDidMount() {
-        this.props.fetchGames()
-    }
+    // componentDidMount() {
+    //     this.props.fetchGames()
+    // }
     
     render() {
         // console.log(this.props)
@@ -26,4 +26,4 @@ class Games extends Component {
     }
 }
 
-export default  connect(null, {fetchGames})(Games);
+export default  connect(null)(Games);

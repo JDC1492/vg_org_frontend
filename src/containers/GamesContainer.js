@@ -3,8 +3,12 @@ import GameForm from '../components/GameForm';
 import Games from '../components/Games';
 import { connect } from 'react-redux';
 import { Container } from 'react-bootstrap';
+import { fetchGames } from '../actions/ActIndex';
 
 class GamesContainer extends Component {
+    componentDidMount() {
+        this.props.fetchGames()
+    }
     
     render() {
         return (
@@ -22,4 +26,4 @@ const mapStateToProps = state =>{
     return{games: state}
 }
 
-export default connect(mapStateToProps)(GamesContainer);
+export default connect(mapStateToProps, { fetchGames })(GamesContainer);

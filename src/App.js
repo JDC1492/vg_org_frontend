@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
+// import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home'
 import About from './components/About'
@@ -16,17 +16,15 @@ class App extends Component{
       <div className="App">
         <Switch>
           <Route exact path="/" component={ Home }/>
-          <Route  path="/about" component={ About }/>
           <Route  path="/games/new" component={ GamesContainer }/>
-          <Route  path='/games/:id' render={(routerProps) => <SingleGame {...routerProps} games={this.props.games}/>} />
+          <Route  path='/games/:gameID' component={ SingleGame } />
+          <Route  path="/about" component={ About }/>
         </Switch>  
       </div>
     </Router>
   )};
 }
 
-const mapStateToProps = (state) =>{
-  return{games: state}
-}
 
-export default connect(mapStateToProps)(App);
+
+export default App;
