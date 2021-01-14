@@ -18,7 +18,7 @@ class App extends Component{
           <Route exact path="/" component={ Home }/>
           <Route  path="/about" component={ About }/>
           <Route  path="/games/new" component={ GamesContainer }/>
-          <Route  path='/games/:gameId' render={(routerProps) => <SingleGame {...routerProps} games={this.props.games}/>} />
+          <Route  path='/games/:id' render={(routerProps) => <SingleGame {...routerProps} games={this.props.games}/>} />
         </Switch>  
       </div>
     </Router>

@@ -29,7 +29,7 @@ export const addGame = game => {
         })
             .then(resp => resp.json())
             .then(game => {
-                dispatch({type: 'ADD_GAME', payload: game.id})
+                dispatch({type: 'ADD_GAME', payload: game})
             })
     }
 }

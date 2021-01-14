@@ -13,7 +13,7 @@ class Games extends Component {
     }
     
     render() {
-        console.log(this.props)
+        // console.log(this.props)
         const eachGame = this.props.games.map((game,i) => 
             <Col key={i} xs={6} md={4}><Game key={i} game={game} /></Col> )
         return (
