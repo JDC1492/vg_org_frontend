@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const HomeLink = () => {
     return (
-        <div>
+        <>
               <NavLink to="/" exact> Home  </NavLink> |
-        </div>
+        </>
     );
 }
 

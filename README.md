@@ -1,3 +1,17 @@
+VG_Organizer - A web-based application.
+This is a single page application that uses React and Rails(as a backend). The purpose of this application is for the user to create a list.
+Through the use of fetch requests the user is able to create a catalogue of thier collection, view them on the page and delete the entries if necessary.
+Example Data is provided for example usage in this basic application.
+
+##Installing
+
+In order to use this app, fork and clone the repository in your terminal with the following:
+
+'https://github.com/your-account-here/vg_org_frontend'
+
+Link to back-end repo: https://github.com/JDC1492/vg_org_backend
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

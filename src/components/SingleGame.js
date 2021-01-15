@@ -32,7 +32,7 @@ export const SingleGame = ({ match }) => {
                               <ListGroup.Item>{game.description}</ListGroup.Item>
                           </Card.Body>                   
                   </Card>
-                </div>
+              </div>
            </Row>
         </div>
     );
