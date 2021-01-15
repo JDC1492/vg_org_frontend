@@ -17,7 +17,7 @@ class App extends Component{
         <Switch>
           <Route exact path="/" component={ Home }/>
           <Route  path="/games/new" component={ GamesContainer }/>
-          <Route  path='/games/:gameID' component={ SingleGame } />
+          <Route  path='/games/:gameId' component={ SingleGame } />
           <Route  path="/about" component={ About }/>
         </Switch>  
       </div>
@@ -25,6 +25,8 @@ class App extends Component{
   )};
 }
 
-
+// const mapStateToProps = (state) =>{     render={(routerProps) => <SingleGame {...routerProps} games={this.props.games}/>}
+//   return{games: state} connect(mapStateToProps)
+// }
 
 export default App;

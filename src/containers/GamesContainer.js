@@ -26,4 +26,4 @@ const mapStateToProps = state =>{
     return{games: state}
 }
 
-export default connect(mapStateToProps, { fetchGames })(GamesContainer);
+export default connect(mapStateToProps, { fetchGames } )(GamesContainer);

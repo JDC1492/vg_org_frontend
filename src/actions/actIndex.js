@@ -4,7 +4,8 @@ export const fetchGames = () => {
             .then(resp => resp.json())
             .then(games => {
                 dispatch({type: "SET_GAMES", payload: games})
-            })
+            }
+        )
     }
 }
 
@@ -12,9 +13,10 @@ export const fetchGames = () => {
 //     return (dispatch) => {
 //         return fetch(`http://localhost:3000/games/${gameId}`)
 //             .then(resp => resp.json())
-//             .then(game => {
+//             .then(game => { debugger
 //                 dispatch({type: "GRAB_GAME", payload: game.id})
-//             })
+//             }
+//         )
 //     }
 // }
 
@@ -30,7 +32,8 @@ export const addGame = game => {
             .then(resp => resp.json())
             .then(game => {
                 dispatch({type: 'ADD_GAME', payload: game})
-            })
+            }
+        )
     }
 }
 
@@ -46,6 +49,7 @@ export const deleteGame = gameId => {
             .then(resp => resp.json())
             .then(game => {
                 dispatch({type: 'REMOVE_GAME', payload: game.id})
-            })
+            }
+        )
     } 
 }

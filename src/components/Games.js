@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Game from '../components/Game';
 import { Col, Row} from 'react-bootstrap';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 // import { fetchGames } from '../actions/ActIndex';
 
 
@@ -25,5 +25,5 @@ class Games extends Component {
         );
     }
 }
-
-export default  connect(null)(Games);
+//  connect(null)
+export default Games;
