@@ -5,14 +5,14 @@ import Home from './components/Home'
 import About from './components/About'
 import GamesContainer from './containers/GamesContainer'
 import SingleGame from './components/SingleGame'
-import NavBar from './NavBar';
+import NavBarContainer from './containers/NavBarContainer';
 import './App.css';
 
 class App extends Component{
   render(){
   return (
     <Router>
-    <NavBar />
+    <NavBarContainer />
       <div className="App">
         <Switch>
           <Route exact path="/" component={ Home }/>
