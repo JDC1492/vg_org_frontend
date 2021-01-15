@@ -1,7 +1,7 @@
 import React from 'react'
 import HomeLink from '../components/navcomps/HomeLink'
 import NewLink from '../components/navcomps/NewLink';
-import AboutLink from '../components/aboutcomps/AboutLink'
+import AboutLink from '../components/navcomps/AboutLink'
 import { Container, Row} from 'react-bootstrap';
 
 

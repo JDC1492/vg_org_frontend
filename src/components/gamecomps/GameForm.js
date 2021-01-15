@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { addGame } from '../actions/ActIndex';
+import { addGame } from '../../actions/ActIndex';
 import { connect } from 'react-redux';
 import { Container } from 'react-bootstrap';
 
@@ -17,12 +17,12 @@ class GameForm extends Component {
         }
     }
     
-
     handleChange = e => {
         this.setState({
             [e.target.name]: e.target.value
         })
     }
+
     handleSubmit = e => {
        e.preventDefault()
        this.props.addGame(this.state)    

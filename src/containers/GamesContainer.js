@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import GameForm from '../components/GameForm';
-import Games from '../components/Games';
+import GameForm from '../components/gamecomps/GameForm';
+import Games from '../components/gamecomps/Games';
 import { connect } from 'react-redux';
 import { Container } from 'react-bootstrap';
 import { fetchGames } from '../actions/ActIndex';

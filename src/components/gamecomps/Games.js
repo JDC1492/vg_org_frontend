@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Game from '../components/Game';
+import Game from './Game';
 import { Col, Row} from 'react-bootstrap';
 // import { connect } from 'react-redux';
 // import { fetchGames } from '../actions/ActIndex';

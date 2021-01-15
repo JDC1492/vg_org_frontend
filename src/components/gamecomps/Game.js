@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardDeck, ListGroup, Row } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { deleteGame } from '../actions/ActIndex';
+import { deleteGame } from '../../actions/ActIndex';
 import { Link } from 'react-router-dom';
 
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { connect } from 'react-redux'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home'
-import About from './components/About'
+import About from './components/aboutcomps/About'
 import GamesContainer from './containers/GamesContainer'
 import SingleGame from './components/SingleGame'
 import NavBarContainer from './containers/NavBarContainer';
