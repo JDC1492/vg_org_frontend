@@ -1,8 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux'
 import { Card, ListGroup, Row } from 'react-bootstrap';
+import BackLink from './navcomps/BackLink';
 
-export const SingleGame = ({ match }) => {
+const SingleGame = ({ match }) => {
     const { gameId } = match.params
     const selGame = parseInt(gameId) - 1
     let game = useSelector(state => state[selGame])
@@ -11,14 +12,14 @@ export const SingleGame = ({ match }) => {
         if (!game) {
             return (
               <section>
-                <h2>Doesn't Look  Like its Here</h2>
+                <h2>Doesn't Look Like its Here</h2>
               </section>
             )
           }
 
 
     return (
-        <div>
+        <>
             <Row>
               <div className='show-card'>
                   <Card>      
@@ -34,41 +35,12 @@ export const SingleGame = ({ match }) => {
                   </Card>
               </div>
            </Row>
-        </div>
+           <BackLink/>
+        </>
     );
 }
 
 export default SingleGame;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, { Component } from 'react';
 // import { connect } from 'react-redux';
