@@ -1,17 +1,7 @@
 import React, { Component } from 'react';
 import Game from './Game';
 import { Col, Row} from 'react-bootstrap';
-// import { connect } from 'react-redux';
-// import { fetchGames } from '../actions/ActIndex';
-
-
-class Games extends Component {
-
-
-    // componentDidMount() {
-    //     this.props.fetchGames()
-    // }
-    
+class Games extends Component {    
     render() {
         // console.log(this.props)
         const eachGame = this.props.games.map((game,i) => 
@@ -25,5 +15,4 @@ class Games extends Component {
         );
     }
 }
-//  connect(null)
 export default Games;
