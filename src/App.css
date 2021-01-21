@@ -68,3 +68,17 @@ input{
   
   
 }
+
+body{
+  background:rgba(46, 101, 173, 0.685);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.ghText{
+  font-size: 2vw;
+  top: 0%;
+  left: 50%;
+  margin: 0;
+  font-weight: 90;
+
+}
