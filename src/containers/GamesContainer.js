@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import GameForm from '../components/gamecomps/GameForm';
 
-// import { connect } from 'react-redux';
+
 import { Container } from 'react-bootstrap';
-// import { fetchGames } from '../actions/ActIndex';
+import GameFormHead from '../components/gamecomps/GameFormHead';
+
 
 class GamesContainer extends Component {
 
@@ -12,8 +13,8 @@ class GamesContainer extends Component {
         return (
             <div>
                 <Container>
+                    <GameFormHead />
                     <GameForm />
-               
                 </Container>    
             </div>
         );

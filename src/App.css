@@ -50,3 +50,21 @@
   margin-left: auto;
   margin-right: auto
 }
+
+.formHead{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+input{
+  padding: 12px 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.formBody{
+  
+  
+}
