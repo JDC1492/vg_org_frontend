@@ -65,12 +65,16 @@ input{
 }
 
 .formBody{
-  
-  
+  background-color:#F99F39;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 85%;
 }
 
 body{
-  background:rgba(46, 101, 173, 0.685);
+  background-image: url(../src/images/bgroundPhoto.jpg);
+  background-color:#39445f;
+  background-blend-mode: difference;
 	font-family: 'Montserrat', sans-serif;
 }
 

@@ -28,8 +28,8 @@ class App extends Component{
   )};
 }
 
-// const mapStateToProps = (state) =>{     render={(routerProps) => <SingleGame {...routerProps} games={this.props.games}/>}
+// const mapStateToProps = (state) =>{     
 //   return{games: state} connect(mapStateToProps)
-// }
+// }render={(routerProps) => <SingleGame {...routerProps} games={this.props.games}/>}
 
 export default App;
