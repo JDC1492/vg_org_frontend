@@ -5,7 +5,7 @@ const BackLink = () => {
     const history = useHistory()
         return (
             <>
-                <button onClick={() => {
+                <button className='backButt' onClick={() => {
                         history.goBack();
                     }}> Back to Games</button>
             </>

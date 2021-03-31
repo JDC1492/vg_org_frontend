@@ -8,7 +8,7 @@ import GamesHead from '../components/gamecomps/GamesHead';
 class ListsGamesContainer extends Component {
     componentDidMount() {
             this.props.fetchGames()
-        }
+                }
 
 
     render() {

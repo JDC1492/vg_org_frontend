@@ -4,6 +4,7 @@ export const fetchGames = () => {
             .then(resp => resp.json())
             .then(games => {
                 dispatch({type: "SET_GAMES", payload: games})
+                // returning a type and an action.payload
             }
         )
     }
@@ -42,6 +43,7 @@ export const deleteGame = gameId => {
         )
     } 
 }
+
 // export const getGame = gameId => {
 //     return (dispatch) => {
 //         return fetch(`http://localhost:3000/games/${gameId}`)

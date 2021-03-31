@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Accordion, Card, Button } from 'react-bootstrap';
 
-class Home extends Component {
-    render() {
-        return (
+const Home = () => {
+    return (
         <div>
-        Welcome to VG_Organizer.
+            <div className="home">
+        Welcome to VG_Organizer
+            </div>
+        <div className="homePara">
             <Accordion defaultActiveKey="1">
-                <Card>
+                <Card className="homeContainer">
                 <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
                         How to use?
@@ -16,18 +18,15 @@ class Home extends Component {
                 <Accordion.Collapse eventKey="0">
             <Card.Body >
                 If you have a new game that you want to place in the catalogue 
-                you simply go to the new page by clicking the link in the navbar. 
+                you simply go to the form page by clicking the "New Game" link in the navbar. 
                 Fill out the form, press submit, and watch as your collection grows larger!
             </Card.Body>
                 </Accordion.Collapse>
                 </Card>
             </Accordion>
-                
-                 
-            </div>
-        );
-    }
+            </div>  
+        </div>  
+    );
 }
-
 
 export default Home;

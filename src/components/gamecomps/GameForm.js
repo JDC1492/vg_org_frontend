@@ -6,8 +6,8 @@ import { withRouter } from 'react-router-dom';
 
 
 class GameForm extends Component {
-    constructor(props){
-        super(props)
+    constructor(){
+        super()
         this.state={
             title:"",
             release_year:"",

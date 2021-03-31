@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import GameForm from '../components/gamecomps/GameForm';
-
-
 import { Container } from 'react-bootstrap';
+import GameForm from '../components/gamecomps/GameForm';
 import GameFormHead from '../components/gamecomps/GameFormHead';
 
 

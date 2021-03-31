@@ -12,9 +12,9 @@ import thunk from 'redux-thunk';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 let store = createStore(gamesReducer, composeEnhancers(applyMiddleware(thunk))) 
- 
+//  from provider wraping, the entire application has access to the store. 
 ReactDOM.render(
-  <Provider store={store}> 
+  <Provider store={store}>     
     <App />
   </Provider>,
   document.getElementById('root')

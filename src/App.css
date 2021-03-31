@@ -44,24 +44,42 @@
 
 .show-card{
   width: 25%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
+  background-color: #141D29;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto
 }
 
 .formHead{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
+  font-size: 19px;
+  color: #4C8DA9;
+  font-family: 'Baloo Paaji 2';
 }
 
 input{
   padding: 12px 20px;
-  border: 2px solid #ddd;
+  border: 2px solid #F6F7EB;
   border-radius: 5px;
   margin-bottom: 10px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family:'Lucida Sans', 'Lucida Sans Regular',
+   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body{
+  background-image: url(../src/images/bgroundPhoto.jpg);
+  background-color:#22335f;
+  background-blend-mode:hard-light;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fullForm{
+  background-color:#f99f3917;
+  border-radius: 25px;
+  border-width: 50%;
+  width: 265px;
+  align-content: center;
+  margin:inherit ;
 }
 
 .formBody{
@@ -71,18 +89,78 @@ input{
   opacity: 85%;
 }
 
-body{
-  background-image: url(../src/images/bgroundPhoto.jpg);
-  background-color:#39445f;
-  background-blend-mode: difference;
-	font-family: 'Montserrat', sans-serif;
+.ghText{
+  background-color: #ffc107;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  margin: 7%;
+  margin-left: 12%;
+  margin-right: 14%;
+  font-weight: 100;
+  border-radius: 5px;
 }
 
-.ghText{
-  font-size: 2vw;
-  top: 0%;
-  left: 50%;
-  margin: 0;
-  font-weight: 90;
+.nav{
+  display: block;
+  font-size: 19px;
+  color: #4C8DA9;
+  font-family: 'Baloo Paaji 2';
+  text-align:"center";
+  text-decoration: none;
+  position: relative;
+}
 
+.home{
+justify-content: center;
+display: flex;
+align-content: center;
+width: auto;
+  color: #000000;
+  font-family: 'Baloo Paaji 2';
+  font-size: 25px;
+}
+
+.homeContainer{
+  margin-left: 35%;
+  margin-right: 35%;
+  /* justify-content: center;
+  display: flex;
+  align-content: center;
+  width: auto; */
+  background-color:#c5a331;
+  color: #000000;
+  font-family: 'Baloo Paaji 2';
+}
+
+.card-look, .card-year, .card-console, .card-dev, .card-dev, .card-genre{
+  opacity: 95%;
+  font-family: 'Baloo Paaji 2';
+  color: #F99F39;
+  background-color:#334868;
+  background-blend-mode:luminosity;
+}
+
+.aboutTitle{
+  font-family: 'Baloo Paaji 2';
+  color: #F99F39;
+
+}
+
+.para{
+  background-color:#c85e17;
+  margin-left: 45%;
+  font-family: 'Baloo Paaji 2';
+}
+
+.paraII{
+  background-color:#c85e17;
+  margin-right: 50%;
+  font-family: 'Baloo Paaji 2';
+}
+
+.paraIII{
+  background-color:#c85e17;
+  margin-left: 45%;
+  font-family: 'Baloo Paaji 2';
 }

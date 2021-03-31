@@ -5,8 +5,8 @@ const GamesLink = () => {
     return (
         <div>
             <>
-            <NavLink to="/games" exact>Games|</NavLink>
-        </>
+                <NavLink to="/games" exact> Games</NavLink> |
+            </>
         </div>
     );
 }

@@ -4,11 +4,15 @@ import { Card, ListGroup, Row } from 'react-bootstrap';
 import BackLink from './navcomps/BackLink';
 
 const SingleGame = ({ match }) => {
+            // making use of the match object as a prop thats provided by router 
+            // desctructuring that object and making use of the gameId, through match.params
+        
     const { gameId } = match.params
-    const selGame = parseInt(gameId) - 1
-    let game = useSelector(state => state[selGame])
+    const selGame = parseInt(gameId)
+    let game = useSelector(state => state.find(game => game.id === selGame))
+            //useSelector accepts an argument of state
+            //  let game = useSelector(state => state[selGame])   -1
     debugger
-
         if (!game) {
             return (
               <section>
@@ -16,14 +20,12 @@ const SingleGame = ({ match }) => {
               </section>
             )
           }
-
-
     return (
         <>
             <Row>
               <div className='show-card'>
                   <Card>      
-                      <Card.Img  max-width="auto" height="auto" style={{imageRendering:'pixelated'}}variant="bottom" src={game.cover_art} alt="" />
+                      <Card.Img  max-width="auto" height="auto" style={{imageRendering:'pixelated'}} variant="bottom" src={game.cover_art} alt="" />
                           <Card.Body>
                               <Card.Title>{game.title}</Card.Title> 
                               <ListGroup.Item>Release Year: {game.release_year}</ListGroup.Item>
@@ -35,7 +37,7 @@ const SingleGame = ({ match }) => {
                   </Card>
               </div>
            </Row>
-           <BackLink/>
+           <BackLink />
         </>
     );
 }

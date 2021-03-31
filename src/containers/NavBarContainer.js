@@ -7,8 +7,8 @@ import { Container, Row} from 'react-bootstrap';
 
 
 const NavBarContainer = () =>
-    <div>
-      <Container style={{textAlign:"center"}}>
+    <div className='nav'>
+      <Container>
       <Row >
         <HomeLink />
         <NewLink />

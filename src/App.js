@@ -11,21 +11,24 @@ import ListsGamesContainer from './containers/ListsGamesContainer';
 
 class App extends Component{
   render(){
-  return (
-    <Router>
-    <NavBarContainer />
-      <div className="App">
-        <Switch>
-          <Route exact path="/" component={ Home }/>
-          <Route exact path="/games" component={ ListsGamesContainer }/> 
-            {/* specifying with the 'exact' keyword since other routes share part of this URL */}
-          <Route  path="/games/new" component={ GamesContainer }/>
-          <Route  path='/games/:gameId' component={ SingleGame } />
-          <Route  path="/about" component={ About }/>
-        </Switch>  
-      </div>
-    </Router>
-  )};
+    return (
+      <Router>
+      <NavBarContainer />
+        <div className="App">
+          <Switch>
+              {/* switch allows for a route to render exclusively  */}
+            <Route exact path="/" component={ Home }/>
+            {/* route renders the appropriate UI when the path matches the URL */}
+            <Route exact path="/games" component={ ListsGamesContainer }/> 
+              {/* specifying with the 'exact' keyword since other routes share part of this URL */}
+            <Route exact path="/games/new" component={ GamesContainer }/>
+            <Route exact path='/games/:gameId' component={ SingleGame } />
+            <Route  path="/about" component={ About }/>
+          </Switch>  
+        </div>
+      </Router>
+    )
+  };
 }
 
 // const mapStateToProps = (state) =>{     
