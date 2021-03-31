@@ -23,7 +23,7 @@ class Game extends Component {
       <>
         <Row>
           <CardDeck style={{ width: "19.5rem" }}>
-            <Card className="card-look">
+            <Card id="card-look">
               <Card.Img variant="top" src={game.cover_art} alt="" />
               <Card.Body className="text-center">
                 <Card.Title>{game.title}</Card.Title>
@@ -32,19 +32,21 @@ class Game extends Component {
                 </Card.Text>
               </Card.Body>
               <ListGroup>
-                <ListGroup.Item className="card-year">
+                <ListGroup.Item id="card-year">
                   Release Year: {game.release_year}
                 </ListGroup.Item>
-                <ListGroup.Item className="card-console">
+                <ListGroup.Item id="card-console">
                   Console: {game.console}
                 </ListGroup.Item>
-                <ListGroup.Item className="card-dev">
+                <ListGroup.Item id="card-dev">
                   Developer: {game.developer}
                 </ListGroup.Item>
-                <ListGroup.Item className="card-genre">
+                <ListGroup.Item id="card-genre">
                   Game Genre: {game.genre}
                 </ListGroup.Item>
-                <ListGroup.Item>Game Likes: {this.state.likes}</ListGroup.Item>
+                <ListGroup.Item id="card-like">
+                  Game Likes: {this.state.likes}
+                </ListGroup.Item>
                 <ListGroup horizontal>
                   <ListGroup.Item>
                     <Link to={`/games/${game.id}`}>View Game</Link>
